@@ -5,5 +5,7 @@ RUN apt-get upgrade -y
 RUN apt-get -y install curl gnupg
 RUN curl -sL https://deb.nodesource.com/setup_11.x  | bash -
 RUN apt-get -y install nodejs
+RUN apt-get install -y autossh
+RUN apt-get install -y systemd
 RUN docker-php-ext-install sockets
 RUN pecl install grpc
